@@ -1,0 +1,45 @@
+write a cod that spells a name at the same line
+example: instead 
+b
+a
+n
+a
+n
+a
+
+the code should prompt
+
+banana
+
+(do it in python and c)
+
+2. strip()
+3. handle = open(filename.txt, mode)
+you can open, read, write and close
+
+4. dictionaries (9.2)
+get method for dictionaries
+
+x = dictionary.get(name_key, number_default)
+number_default = the default value if the key doesn'n exists.
+
+
+- using a for loop into a dictionary, the for won't look to the values, but just
+to the keys;
+- you can get a list of keys, values or items (both) from a dictionary;
+print(dictionary.keys())
+print(dictionary.values())
+print(dictionary.items())
+
+minute:5:45
+
+
+purse = dict()
+purse['money'] = 12
+purse['candy'] = 3
+purse['tissues'] = 35
+print(purse) 
+>>> {'money': 12, 'tissues': 75, 'candy': 3}
+
+print(purse['candy'])
+>>>3
