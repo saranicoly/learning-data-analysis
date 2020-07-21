@@ -30,8 +30,12 @@ to the keys;
 print(dictionary.keys())
 print(dictionary.values())
 print(dictionary.items())
-
-minute:5:45
+- you also can get key and value using the for loop
+dictionary = {"sara" : 1, "fred" : 2}
+for aaa(key),bbb(value) in dictionary.items():
+    print(aaa, bbb)
+>> sara 1
+>> fred 2
 
 
 purse = dict()
