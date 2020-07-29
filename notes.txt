@@ -1,4 +1,4 @@
-write a cod that spells a name at the same line
+write a code that spells a name in the same line
 example: instead 
 b
 a
@@ -23,6 +23,14 @@ get method for dictionaries
 x = dictionary.get(name_key, number_default)
 number_default = the default value if the key doesn'n exists.
 
+-instead 
+if key in counts:
+    counts[key] = counts[key] + 1
+else:
+    counts[key] = 1
+
+-you can use 
+counts[key] = counts.get(key,0) + 1
 
 - using a for loop into a dictionary, the for won't look to the values, but just
 to the keys;
