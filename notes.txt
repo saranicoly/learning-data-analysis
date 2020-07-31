@@ -55,3 +55,31 @@ print(purse)
 
 print(purse['candy'])
 >>>3
+
+
+
+tuples
+- a tuple is just a list that cannot be modified
+- the sintax is just as a list except we use parentheses 
+>>> x = ("Glenn", "Sally", "Sara")
+>>> (x, y) = (4, 5)
+
+we can sort a list of tuples (a dict):
+
+d = {'a': 1, 'c': 15, 'b': 10}
+//disordened
+
+sorted(d.items())
+[('a', 1), ('b', 10), ('c', 15)]
+
+//sort by key
+
+//sort by values instead of key
+>>> d = {'a': 1, 'b': 15, 'c': 10}
+>>> tmp = list()
+>>> for k, v in d.items:
+        tmp.append( (v, k) )
+
+>>> tmp = sorted(tmp, reverse=True)
+>>> print(tmp)
+[(15, 'b'), (10, 'c'), (1, 'a')}
