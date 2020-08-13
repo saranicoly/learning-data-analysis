@@ -1,0 +1,36 @@
+- before you can use regular expressions in your program, you must import
+the library using "import re"
+- you can use re.search() to see if a string matches a regular expression,
+similar to using the find() method for strings
+- you can use re.findall() to extract portions of a string that match your
+regular expression, similar to a combination of find() and slicing: var[5:10]
+- re.search() returns a true/false depending on wheter the string matches the
+regular expression
+- if we actually want the matching strings to be extracted, we use re.findall()
+example:
+
+import re
+x = "My favorite numbers are 19 and 42"
+y = re.findall("[0-9]+", x)
+print(y)
+>>>["2", "19", "42"]
+
+- the repeat characters (* and +) push outward in both directions (greedy) to
+match the largest possible string
+example:
+import re
+x = "From: Using the : character"
+y = re.findall("^F.+:", x)
+print(y)
+>>>["From: Using the :"]
+
+- for a non-greedy matching you can add an ? after .+     >>>> ^F.+?:
+- you can refine the match for re.findall() and separately determine which
+portion of the match is to be extracted by using parentheses
+example:
+From emailaddress@mail.com anything 27 other
+y = re.findall("\S+@\S+", x)
+print(y)
+>>> emailaddress@mail.com
+
+- "@([^ ]*)"
