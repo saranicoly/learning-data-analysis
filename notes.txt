@@ -83,3 +83,23 @@ sorted(d.items())
 >>> tmp = sorted(tmp, reverse=True)
 >>> print(tmp)
 [(15, 'b'), (10, 'c'), (1, 'a')}
+
+
+TABELA ASCII
+- The ord() function tell us the numeric
+value of a simple ASCII character
+
+print(ord("H"))
+>>>72
+
+decoding byte datas to utf-8
+
+while True:
+   data = mysock.recv(512)
+   if (len(data)<1):
+      break
+   mystring = data.decode()
+   print(mystring)
+
+- encode() takes the string and makes it 
+into bytes
