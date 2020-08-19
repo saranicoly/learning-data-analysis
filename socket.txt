@@ -1,0 +1,18 @@
+import socket
+mysock = socket.socket(socket.AF_INET, socket.SOCK.SOCK_STREAM)
+mysock.connect(("data.pr4e.org", 80))
+
+
+making an http request
+-connect to the server like www.dr-chuck.com
+-request a document (or the default document)
+
+GET http://www/dr-chuck.com/page1.htm HTTP/1.0
+GET http://www.mlive.com/ann-arbor/ HTTP/1.0
+GET http://www.facebook.com HTTP/1.0
+
+
+TELNET
+
+telnet data.pr4e.org 80
+GET http://data.pr4e.org/page1.htm HTTP/1.0
